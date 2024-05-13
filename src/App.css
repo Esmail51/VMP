@@ -46,6 +46,12 @@ input{
   outline: none;
   text-align: center;
 }
+
+input,
+input::-webkit-input-placeholder {
+    font-size: 16px !important;
+}
+
 label {
   display: inline-block;
   margin-right: 15px;
