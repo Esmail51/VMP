@@ -10,6 +10,21 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+.pre-loader {
+  display: grid;
+  flex-direction: column;
+  place-items: center;
+  height: 100vh;
+  align-content: center;
+  background: #4361EE;
+}
+
+.pre-loader p {
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+}
+
 .container {
   position: relative; /* Position container relative to its parent */
   width: 100%;
@@ -17,7 +32,7 @@ body {
 }
 .top-content{
   text-align: center;
-  color: #8e37ff;
+  color: #4361ee;
   font-weight:600
 }
 
@@ -45,6 +60,11 @@ input{
   padding: 10px;
   outline: none;
   text-align: center;
+}
+
+input,
+input::-webkit-input-placeholder {
+    font-size: 16px !important;
 }
 label {
   display: inline-block;

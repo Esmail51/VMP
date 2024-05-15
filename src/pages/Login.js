@@ -163,7 +163,7 @@ function Login() {
     <div className="App">
       <div className="container">
         <EllipsesMenu />
-        <img src={backArrow} alt='' width={35} style={{ position: 'absolute', top: '2%', left: '9%' }} onClick={(e) => handleBackButton(e)}></img>
+        <img src={backArrow} alt='' width={35} style={{ position: 'absolute', top: '2%', left: '6%' }} onClick={(e) => handleBackButton(e)}></img>
         <img src={Img} alt="Logo" style={{ paddingTop: '50px', width:'100%' }} />
         <div className="input-container">
           <p style={{ fontSize: '4vw', fontWeight: '600', color:'#4361EE'}}>{t('OTP_Verification')}</p>

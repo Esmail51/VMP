@@ -13,7 +13,6 @@ const Header = () => {
   let Navigate = useNavigate();
 
   const changeLanguage = (e) => {
-    console.log(e)
     i18n.changeLanguage(e);
     toggleMenu()
   }
@@ -23,7 +22,7 @@ const Header = () => {
     return (
 
         <div>
-            <img src={backArrow} alt='' width={35} style={{ position: 'absolute', top: '2%', left: '9%' }} onClick={() => Navigate(-1)}></img>
+            <img src={backArrow} alt='' width={35} style={{ position: 'absolute', top: '2%', left: '6%' }} onClick={() => Navigate(-1)}></img>
         <div className="ellipsis-menu">
 
             <div className="ellipsis" onClick={toggleMenu}>

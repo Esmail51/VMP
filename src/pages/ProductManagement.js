@@ -34,7 +34,8 @@ const Label = styled.label`
 
 const Input = styled.input`
   width: 100%;
-  padding: 18px;
+  padding: 8px;
+  height: 50px;
   border: 1px solid #4361EE;
   border-radius: 12px;
   box-sizing: border-box;
@@ -161,7 +162,6 @@ const VendorManagementPlatform = (props) => {
     for (let i = 0; i < b64Data.length; i++) {
       view[i] = b64Data.charCodeAt(i);
     }
-    console.log('ork-5')
 
     return new Blob([buffer], { type: contentType });
   };
@@ -184,7 +184,6 @@ const VendorManagementPlatform = (props) => {
     });
     try {
       const Response = await axios.post('http://localhost:5000/addProduct', formData)
-      console.log('reee', Response)
       if (Response.status === 200) {
         navigate('/productlist')
       }
@@ -212,7 +211,7 @@ const VendorManagementPlatform = (props) => {
     <Container>
       <div style={top_content}>
         <img src={Img} alt='' width={350}></img>
-        <p>{t('Pro_Details')}</p>
+        <p style={{fontSize:'22px'}}>{t('Pro_Details')}</p>
         <div className='red_box' style={{ display: errorMessage ? 'block' : 'none' }}>   {errorMessage && <p> Upload Image to continue.</p>}</div>
       </div>
       
@@ -238,7 +237,7 @@ const VendorManagementPlatform = (props) => {
                 width: "-webkit-fill-available",
                 height: "12vh",
                 outline: "none",
-                fontSize: '20px'
+                fontSize: '14px'
               }}
               placeholder="Description"
               value={productDescription}
